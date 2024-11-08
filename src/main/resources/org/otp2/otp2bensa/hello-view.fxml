@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.otp2.otp2bensa.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="distanceLabel" text="%distance.label"/>
+    <TextField fx:id="kmTextField"/>
+
+    <Label fx:id="fuelBurnLabel" text="How much the car burns fuel per 100 km:"/>
+    <TextField fx:id="fuelPerKmTextField"/>
+
+    <Button fx:id="calculateButton" text="%calculate.button" onAction="#onCalculateButtonClicked"/>
+
+    <Label visible="false" text="%result.label" fx:id="resultLabel"/>
+
+    <Button text="English" onAction="#setEN" />
+    <Button text="Japanese" onAction="#setJP"/>
+    <Button text="Farsi" />
+
+</VBox>
